@@ -1,11 +1,23 @@
+import React from "react";
 import "./App.css";
+import CityLinks from "./CityLinks";
+import SearchCity from "./SearchCity";
+import Weather from "./Weather";
+import Footer from "./Footer";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Hello React World!!!</h1>
-      </header>
+      <div className="container">
+        <div className="weather-app">
+          <CityLinks />
+          <br />
+          <SearchCity />
+          <br />
+          <Weather />
+        </div>
+        <Footer />
+      </div>
     </div>
   );
 }

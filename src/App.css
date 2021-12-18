@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+.container {
+  max-width: 650px;
+  margin-top: 60px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul {
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li {
+  list-style: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.weather-app {
+  border: 1px solid rgb(168, 166, 166);
+  border-radius: 10px;
+  padding: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.emoji1 {
+  font-size: 95px;
+  margin-left: 35px;
+  margin-top: -38px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ppt {
+  margin-left: 28px;
+}
+
+.temp1 {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.emojis {
+  margin-top: -5px;
+  font-size: 35px;
+  margin-left: 1px;
+}
+
+.forecast {
+  margin-left: 65px;
+}
+
+.date {
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+.weekDays {
+  margin-left: 4px;
+  font-size: 18px;
+}
+
+.units {
+  position: relative;
+  top: -22px;
+  text-decoration: none;
+}
+
+.humidityWind {
+  line-height: 21px;
+  font-family: "PT Serif", serif;
+  font-size: 15px;
+}
+
+.forecast-temps {
+  font-size: 15px;
+}
+
+.min-temp {
+  opacity: 0.5;
+}
+
+.date {
+  margin-left: 35px;
+}
+
+.active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+
+.active:hover {
+  text-decoration: none;
+}
+
+.description {
+  margin-top: -20px;
+  margin-left: 13px;
+  font-size: 14px;
+  font-style: italic;
+  text-transform: capitalize;
+  font-family: "PT Serif", serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.city {
+  font-family: "Zen Antique", serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.forecast {
+  font-family: "Zen Antique", serif;
+}
+
+.cities {
+  font-family: "PT Serif", serif;
+}
+.date {
+  font-family: "PT Serif", serif;
+  font-size: large;
+}
+
+.time {
+  font-family: "PT Serif", serif;
+}
+
+.footer {
+  font-family: "PT Serif", serif;
+}
+
+.units {
+  font-family: "PT Serif", serif;
 }
