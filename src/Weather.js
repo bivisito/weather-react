@@ -15,7 +15,7 @@ export default function Weather() {
   return (
     <div className="Weather">
       <div className="row">
-        <div className="col-3 emoji1">
+        <div className="col-2 emoji">
           <ul>
             <li>
               <img src={weatherData.imgUrl} alt={weatherData.description} />
