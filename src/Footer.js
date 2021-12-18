@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div className="Footer">
       <p className="footer">
-        <a href="https://github.com/bivisito/my-weather-app">
+        <a href="https://github.com/bivisito/weather-react">
           {" "}
           Open-source code{" "}
         </a>{" "}
