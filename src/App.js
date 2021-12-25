@@ -13,8 +13,6 @@ function App() {
           <CityLinks />
           <br />
           <SearchCity />
-          <br />
-          <Weather />
         </div>
         <Footer />
       </div>
