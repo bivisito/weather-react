@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import "./App.css";
+import FormattedDate from "./FormattedDate";
 
 export default function SearchCity() {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -9,12 +10,12 @@ export default function SearchCity() {
     setWeatherData({
       ready: true,
       temperature: response.data.main.temp,
+      date: new Date(response.data.dt * 1000),
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
       city: response.data.name,
       description: response.data.weather[0].description,
-      date: "Monday, Dec. 8",
-      time: "14:06",
+      date: new Date(response.data.dt * 1000),
       iconUrl: `https://ssl.gstatic.com/onebox/weather/64/sunny.png`,
     });
   }
@@ -79,7 +80,9 @@ export default function SearchCity() {
           <div className="col-4 date">
             <ul>
               <li className="city">{weatherData.city}</li>
-              <li>{weatherData.date}</li>
+              <li>
+                <FormattedDate date={weatherData.date} />{" "}
+              </li>
               <li>{weatherData.time}</li>
             </ul>
             <br />
