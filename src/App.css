@@ -88,14 +88,9 @@ li {
 }
 
 .description {
-  margin-top: -20px;
-  margin-left: 13px;
-  font-size: 14px;
-  font-style: italic;
+  font-size: 16px;
   text-transform: capitalize;
   font-family: "PT Serif", serif;
-  font-size: 15px;
-  font-weight: 600;
 }
 
 .city {

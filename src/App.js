@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import CityLinks from "./CityLinks";
-import SearchCity from "./SearchCity";
 import Weather from "./Weather";
 import Footer from "./Footer";
 
@@ -12,7 +11,7 @@ function App() {
         <div className="weather-app">
           <CityLinks />
           <br />
-          <SearchCity />
+          <Weather defaultCity="Toronto" />
         </div>
         <Footer />
       </div>
