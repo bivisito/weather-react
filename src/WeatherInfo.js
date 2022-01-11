@@ -1,5 +1,4 @@
 import React from "react";
-import App from "./App.css";
 import FormattedDate from "./FormattedDate";
 import WeatherTemp from "./WeatherTemp";
 
