@@ -1,6 +1,7 @@
 import React from "react";
 import App from "./App.css";
 import FormattedDate from "./FormattedDate";
+import WeatherTemp from "./WeatherTemp";
 
 export default function WeatherInfo(props) {
   return (
@@ -19,13 +20,7 @@ export default function WeatherInfo(props) {
         <div className="col-3 ppt">
           <ul>
             <li>
-              <span className="temp">{Math.round(props.data.temperature)}</span>
-              <span className="units">
-                <a href="/" className="active">
-                  °C
-                </a>
-                | <a href="/">°F</a>
-              </span>
+              <WeatherTemp celsius={props.data.temperature} />
             </li>
             <li className="humidityWind">
               <span>Humidity: {Math.round(props.data.humidity)}%</span>
