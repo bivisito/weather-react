@@ -12,21 +12,6 @@ export default function FormattedDate(props) {
   ];
   let day = days[props.date.getDay()];
 
-  let months = [
-    "Jan.",
-    "Feb.",
-    "March",
-    "Apr.",
-    "May",
-    "June",
-    "July",
-    "Aug.",
-    "Sept.",
-    "Oct.",
-    "Nov.",
-    "Dec.",
-  ];
-
   let hours = props.date.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
