@@ -58,13 +58,6 @@ export default function Weather(props) {
                 className="form-control btn btn-primary"
               />
             </div>
-            <div class="col-3">
-              <input
-                type="submit"
-                value="Current Loc"
-                className="form-control btn btn-secondary"
-              />
-            </div>
           </div>
         </form>
         <br />
